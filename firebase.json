@@ -1,0 +1,17 @@
+{
+  "hosting": {
+    "public": "dist/my-success-link-tree",
+    "site": "my-success-linktree",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
