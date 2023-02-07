@@ -1,48 +1,37 @@
 <div class="main-container">
   <div class="first-container">
-    <div class="logo-container">
-      <img class="logo" src="assets/mysuccess_icon_prod.png" alt="">
-      <div class="logo-caption">
-        <span class="logo-text">MYSUCCESS</span>
+    <div class="header-container">
+      <div class="icon-logo-container">
+        <div class="icon-logo">
+          <img src="assets/mysuccess_icon_prod.png" class="mysucces-icon">
+        </div>
+      </div>
+      <div class="nav-bar">
+        <a *ngFor="let navItem of navItems; let i = index" href="" [class.nav-item]="i != 3" [class.nav-item-special]="i == 3">{{navItem}}</a>
       </div>
     </div>
   </div>
   <div class="second-container">
-    <div class="content">
-      <span class="content-caption">Welcome to the preferred platform that connects students to the best Institutions in Malaysia</span>
+    <div class="content-container">
+      <div class="content-1">
+        <div class="sub-content1-1">
+          <span class="header">MYSUCCESS</span>
+          <span class="desc">Welcome to the preferred platform that connects students to the best Institutions in Malaysia</span>
+        </div>
+        <div class="sub-content1-2">
+          <div class="download-icon-container">
+            <object data="assets/Google_Play-Badge-Logo.wine.svg" width="210" style="margin-right: 5%"></object>
+            <object data="assets/App_Store_(iOS)-Badge-Logo.wine.svg" width="200"></object>
+          </div>
 
-      <div class="option-list">
-        <a class="option-button" (click)="click()">
-          <span class="option-text">Student</span>
-        </a>
-        <a class="option-button" [href]="this.urls.list_url[0].url">
-          <span class="option-text">Institution</span>
-        </a>
-        <a class="option-button" [href]="this.urls.list_url[2].url">
-          <span class="option-text">Contact Us</span>
-        </a>
+          <div class="footer-container">
+            <span class="footer-text">By clicking User Web, Provider, Contact Us, GPLay and AppStore you agree to our <a class="text-blue-500">Terms and Conditions</a> and <a class="text-blue-500">Privacy Policy</a></span>
+          </div>
+        </div>
       </div>
-
-      <div class="download-button">
-        <a [href]="this.urls.list_url[3].url" style="cursor: pointer" class="gplay-button">
-          <object data="assets/Google_Play-Badge-Logo.wine.svg" width="170"></object>
-        </a>
-
-        <a [href]="this.urls.list_url[4].url" style="cursor: pointer" class="ios-button">
-          <object data="assets/App_Store_(iOS)-Badge-Logo.wine.svg" width="160"></object>
-        </a>
+      <div class="content-2">
+        <img src="assets/icon_group.png" style="height: 100%; width: 80%">
       </div>
-
-      <div class="tnc">
-        <span>By clicking User Web, Provider, Contact Us, GPLay and AppStore you agree to our <a class="text-blue-500"
-                                                                                                 [href]="this.urls.list_url[6].url">Terms and Conditions</a> and <a
-          class="text-blue-500" [href]="this.urls.list_url[5].url">Privacy Policy</a></span>
-      </div>
-    </div>
-    <div class="footer">
-      <span class="footer-text">MySuccess © MySuccess Resources Sdn Bhd</span>
     </div>
   </div>
 </div>
-
-

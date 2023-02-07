@@ -3,12 +3,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
-:root {
-  font-family: 'Poppins', sans-serif;
+@font-face {
+  font-family: "Telex";
+  src: local("Telex"), url(./assets/fonts/Telex/Telex-Regular.ttf) format("truetype");
 }
 
 * {
+  font-family: "Telex";
   margin: 0;
 }

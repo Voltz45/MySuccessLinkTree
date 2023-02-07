@@ -36,6 +36,14 @@ export class AppComponent implements OnInit {
     ]
   }
 
+  navItems = [
+    "Student",
+    "Institution",
+    "About Us",
+    "Why Mysuccess",
+    "Contact Us"
+  ]
+
   constructor(
     private db: AngularFirestore,
     private dialog: MatDialog
