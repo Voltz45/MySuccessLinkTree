@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "my-success-2022"
+  },
+  "targets": {
+    "my-success-2022": {
+      "hosting": {
+        "my-success-linktree": [
+          "my-success-linktree"
+        ]
+      }
+    }
   }
 }

@@ -1,0 +1,43 @@
+<div class="main-container">
+  <div class="icon-container">
+    <div class="background-icon">
+      <img src="assets/mysuccsess-icon-rev.png" routerLink="/landing-page" class="icon">
+    </div>
+  </div>
+
+  <div class="navbar-container-1">
+    <a *ngFor="let navItem of navItems; let i = index" [routerLink]="navItem.path" class="nav-item-1 index-{{i+1}}" routerLinkActive="active" (click)="onClick()">{{navItem.label}}</a>
+  </div>
+
+
+
+  <div class="title-container">
+    <span class="title-text">My Success</span>
+  </div>
+
+  <div class="navbar-container">
+    <button mat-raised-button class="menu-button" (click)="onClick()">
+      <mat-icon class="menu-icon">menu</mat-icon>
+    </button>
+
+
+    <div class="navbar-content">
+      <div class="sub-navbar-content"></div>
+    </div>
+
+    <div class="close-navbar-button-container">
+      <button mat-fab class="close-navbar-button" (click)="onClick()">
+        <span class='bx bx-x close-icon'></span>
+      </button>
+    </div>
+
+    <div class="navbar-icon-container">
+      <img src="assets/mysuccess_icon.png" style="height: 125px"/>
+      <a style="color: white; font-size: 3vw" routerLink="/landing-page" (click)="onClick()">MySuccess</a>
+    </div>
+
+    <div class="nav-item-container">
+      <a *ngFor="let navItem of navItems; let i = index" [routerLink]="navItem.path" class="nav-item index-{{i+1}}" routerLinkActive="active" (click)="onClick()">{{navItem.label}}</a>
+    </div>
+  </div>
+</div>

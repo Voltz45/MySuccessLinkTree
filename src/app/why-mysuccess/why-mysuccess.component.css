@@ -1,0 +1,184 @@
+.why-container-1024 {
+  display: none;
+}
+
+.why-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: -9;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.why-container:before {
+  z-index: -10;
+  content: ' ';
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 4%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-image: url('/assets/why-icon.png');
+  background-repeat: no-repeat;
+  background-position: 65% center;
+  background-size: cover;
+}
+
+.why-title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  z-index: -8;
+  padding-top: 15%;
+  padding-bottom: 10%;
+}
+
+.title-text {
+  font-weight: 800;
+  font-size: 10vw;
+  font-family: "Poppins";
+}
+
+.sub-title-text {
+  /*color: #6C6C6C;*/
+  font-size: 3vw;
+}
+
+.portal-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.content-1 {
+  padding-bottom: 10%;
+}
+
+.card-container {
+
+}
+
+.card-title {
+  font-size: 6vw;
+  font-weight: 600;
+}
+
+.card-content {
+  font-size: 3vw;
+}
+
+.why-content-container {
+  padding-bottom: 10%;
+}
+
+@media (min-width: 768px) {
+  .why-container:before {
+    top: 5%;
+  }
+
+  .why-title-container {
+    padding-top: 8%;
+  }
+
+  .title-text {
+    font-weight: 800;
+    font-size: 6vw;
+    font-family: "Poppins";
+  }
+
+  .sub-title-text {
+    /*color: #6C6C6C;*/
+    font-size: 2.5vw;
+  }
+
+  .card-title {
+    font-size: 4vw;
+  }
+
+  .card-content {
+    font-size: 2vw;
+  }
+
+  .content-1 {
+    padding-bottom: 8%;
+  }
+}
+
+@media (min-width: 1300px) {
+  .why-container {
+    display: none;
+  }
+
+  .why-container-1024 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+
+  .sub-con-1024-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+  }
+
+  .sub-content-1024 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    padding-left: 10%;
+  }
+
+  .title-text-1024 {
+    font-weight: 800;
+    font-size: 3vw;
+  }
+
+  .icon-con-1024 {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why-icon-1024 {
+    width: 60%;
+    padding-left: 5%;
+  }
+
+  .sub-cont-1024-2 {
+    display: flex;
+    padding-top: 3.5%;
+  }
+
+  .content-1-1024 {
+    width: 50%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .content-2-1024 {
+    width: 50%;
+    padding-right: 5%;
+  }
+
+  .portal-container-1024 {
+    display: flex;
+  }
+
+  .card-title-1024 {
+    font-weight: 600;
+  }
+
+  .card-content-1024 {
+    text-align: justify;
+  }
+}

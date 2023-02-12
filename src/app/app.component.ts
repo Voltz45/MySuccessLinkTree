@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {AngularFirestore} from "@angular/fire/compat/firestore";
 import {MatDialog} from "@angular/material/dialog";
-import {CsComponent} from "./component/cs/cs.component";
 
 @Component({
   selector: 'app-root',
@@ -77,9 +76,5 @@ export class AppComponent implements OnInit {
         logo.classList.remove('hide');
       }
     }
-  }
-
-  click() {
-    this.dialog.open(CsComponent)
   }
 }

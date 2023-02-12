@@ -22,8 +22,10 @@
     "@angular/platform-browser": "14.0.4",
     "@angular/platform-browser-dynamic": "14.0.4",
     "@angular/router": "14.0.4",
+    "boxicons": "^2.1.4",
     "firebase": "^9.9.0",
     "hammerjs": "^2.0.8",
+    "ngx-autosize": "^2.0.4",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

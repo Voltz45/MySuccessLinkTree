@@ -5,9 +5,23 @@ import {AppComponent} from './app.component';
 import {AngularFireModule} from "@angular/fire/compat";
 import {AngularFirestoreModule} from "@angular/fire/compat/firestore";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { CsComponent } from './component/cs/cs.component';
 import {MatDialogModule} from "@angular/material/dialog";
 import {MatButtonModule} from "@angular/material/button";
+import {AppRoutingModule} from './app-routing.module';
+import {RouterModule} from "@angular/router";
+import {LandingPageComponent} from './landing-page/landing-page.component';
+import {ContactUsComponent} from './contact-us/contact-us.component';
+import {WhyMysuccessComponent} from './why-mysuccess/why-mysuccess.component';
+import {AboutUsComponent} from './about-us/about-us.component';
+import {SharedModule} from "./default/shared.module";
+import {MatInputModule} from "@angular/material/input";
+import {ReactiveFormsModule} from "@angular/forms";
+import {AutosizeModule} from "ngx-autosize";
+import {MatCardModule} from "@angular/material/card";
+import {MatDividerModule} from "@angular/material/divider";
+import { TncComponent } from './dialog/tnc/tnc.component';
+import { PpComponent } from './dialog/pp/pp.component';
+import { ConComponent } from './dialog/con/con.component';
 
 const config = {
   apiKey: "AIzaSyDG1f3ZAMKaWKgFlry7YsRE0m0SyCDYraA",
@@ -22,7 +36,13 @@ const config = {
 @NgModule({
   declarations: [
     AppComponent,
-    CsComponent
+    LandingPageComponent,
+    ContactUsComponent,
+    WhyMysuccessComponent,
+    AboutUsComponent,
+    TncComponent,
+    PpComponent,
+    ConComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +50,15 @@ const config = {
     MatDialogModule,
     MatButtonModule,
     AngularFireModule.initializeApp(config),
-    AngularFirestoreModule, // firestore
+    AngularFirestoreModule,
+    AppRoutingModule, // firestore
+    RouterModule,
+    SharedModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    AutosizeModule,
+    MatCardModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

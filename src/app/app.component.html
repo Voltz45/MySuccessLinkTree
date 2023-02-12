@@ -1,37 +1,9 @@
 <div class="main-container">
-  <div class="first-container">
-    <div class="header-container">
-      <div class="icon-logo-container">
-        <div class="icon-logo">
-          <img src="assets/mysuccess_icon_prod.png" class="mysucces-icon">
-        </div>
-      </div>
-      <div class="nav-bar">
-        <a *ngFor="let navItem of navItems; let i = index" href="" [class.nav-item]="i != 3" [class.nav-item-special]="i == 3">{{navItem}}</a>
-      </div>
-    </div>
+  <div class="header-container">
+    <app-header></app-header>
   </div>
-  <div class="second-container">
-    <div class="content-container">
-      <div class="content-1">
-        <div class="sub-content1-1">
-          <span class="header">MYSUCCESS</span>
-          <span class="desc">Welcome to the preferred platform that connects students to the best Institutions in Malaysia</span>
-        </div>
-        <div class="sub-content1-2">
-          <div class="download-icon-container">
-            <object data="assets/Google_Play-Badge-Logo.wine.svg" width="210" style="margin-right: 5%"></object>
-            <object data="assets/App_Store_(iOS)-Badge-Logo.wine.svg" width="200"></object>
-          </div>
 
-          <div class="footer-container">
-            <span class="footer-text">By clicking User Web, Provider, Contact Us, GPLay and AppStore you agree to our <a class="text-blue-500">Terms and Conditions</a> and <a class="text-blue-500">Privacy Policy</a></span>
-          </div>
-        </div>
-      </div>
-      <div class="content-2">
-        <img src="assets/icon_group.png" style="height: 100%; width: 80%">
-      </div>
-    </div>
+  <div class="content-container">
+    <router-outlet></router-outlet>
   </div>
 </div>

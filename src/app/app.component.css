@@ -1,123 +1,37 @@
 .main-container {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-}
-
-.first-container {
-  height: 10%;
-  width: 100%;
+  @apply
+  w-screen h-screen
+  flex flex-col
+  justify-center
 }
 
 .header-container {
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-}
-
-.icon-logo-container {
-  width: 7%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.icon-logo {
-  height: 74%;
-  width: 55%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  background: #0064ff;
-}
-
-.mysucces-icon {
-  width: 95%;
-  height: auto;
-}
-
-.nav-bar {
-  width: 94%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-item {
-  font-size: 80%;
-  width: 8%;
-}
-
-.nav-item-special {
-  font-size: 80%;
-  width: 10%;
-}
-
-.second-container {
-  height: 90%;
-  width: 100%;
+  @apply
+  w-full
+  h-[10%];
+  position: fixed;
+  top: 0;
+  z-index: 100;
 }
 
 .content-container {
-  display: flex;
-  flex-display: row;
-  height: 100%;
+  @apply
+  w-full
+  h-[90%];
 }
 
-.content-1 {
-  width: 40%;
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: 25%;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 5%;
+@media (max-height: 600px) {
+  .header-container {
+    height: 20%;
+  }
+
+  .content-container {
+    height: 80%;
+  }
 }
 
-.sub-content1-1 {
-  display: flex;
-  flex-direction: column;
-  padding-left: 17%;
-}
-
-.header {
-  font-size: 300%;
-  font-weight: 800;
-}
-
-.desc {
-  color: #6C6C6C;
-  font-size: 90%;
-  margin-right: 13%;
-}
-
-.download-icon-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 15% 0 15%;
-}
-
-.footer-text {
-  color: #6C6C6C;
-  font-size: 80%;
-  text-align: center;
-}
-
-.content-2 {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (min-width: 1300px) {
+  .header-container {
+    position: unset;
+  }
 }

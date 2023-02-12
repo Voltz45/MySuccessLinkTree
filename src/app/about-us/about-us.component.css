@@ -1,0 +1,150 @@
+.about-container-1024 {
+  display: none;
+}
+
+.about-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
+  z-index: -1;
+}
+
+.about-title-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-text {
+  font-weight: 800;
+  font-size: 8vw;
+  font-family: "Poppins";
+  margin-bottom: 3%;
+}
+
+.sub-title-text {
+  font-size: 2.5vw;
+  text-align: justify;
+}
+
+.download-icon-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.text-1-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 3vw;
+  font-weight: 600;
+}
+
+.email {
+  font-weight: 600;
+  font-size: 4vw;
+}
+
+@media (min-width: 768px) {
+  .title-text {
+    font-size: 6vw;
+  }
+
+  .sub-title-text {
+    font-size: 1.5vw;
+  }
+
+  .g-icon {
+    width: 225px;
+  }
+
+  .a-icon {
+    width: 210px
+  }
+
+  .text-1-container {
+    font-size: 2vw;
+  }
+
+  .email {
+    font-size: 3vw;
+  }
+}
+
+@media (min-width: 1300px) {
+  .about-container {
+    display: none;
+  }
+
+  .about-container-1024 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .about-icon-1024 {
+    display: flex;
+    padding-left: 5%;
+    width: 40%;
+  }
+
+  .sub-con-1024 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+  .title-text-1024 {
+    font-size: 3vw;
+    font-weight: 800;
+  }
+
+  .sub-title-text-1024 {
+    font-size: 1vw;
+    text-align: justify;
+  }
+
+  .download-container-1024 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text-1024 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+  }
+
+  .footer-text-1024 {
+    font-weight: 600;
+  }
+
+  .email-1024 {
+    font-weight: 600;
+  }
+
+  .g-icon-1024 {
+    width: 225px;
+  }
+
+  .a-icon-1024 {
+    width: 210px;
+  }
+}

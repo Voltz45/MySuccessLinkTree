@@ -1,7 +1,7 @@
 {
   "hosting": {
+    "target": "my-success-linktree",
     "public": "dist/my-success-link-tree",
-    "site": "my-success-linktree",
     "ignore": [
       "firebase.json",
       "**/.*",
