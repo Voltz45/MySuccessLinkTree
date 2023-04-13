@@ -28,6 +28,7 @@
 
 .icon {
   width: 60%;
+  cursor: pointer;
 }
 
 .title-container {

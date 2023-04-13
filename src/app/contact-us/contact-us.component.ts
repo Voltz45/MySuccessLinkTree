@@ -13,6 +13,7 @@ declare let Email: any;
 export class ContactUsComponent implements OnInit {
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   nameFormControl = new FormControl('', [Validators.required]);
+  mobileFormControl = new FormControl('', [Validators.required]);
   msgFormControl = new FormControl('', []);
 
   constructor(public dialog: MatDialog) { }
@@ -26,7 +27,7 @@ export class ContactUsComponent implements OnInit {
       To : 'enquiry@mysuccess.com.my',
       From : "enquiry@mysuccess.com.my",
       Subject : "Contact us " + this.emailFormControl.value,
-      Body : this.msgFormControl.value
+      Body : "Mobile number: " + this.mobileFormControl + "\n" + this.msgFormControl.value
     }).then(
       (message: any) => {
         console.log(message)

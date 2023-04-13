@@ -6,7 +6,10 @@
   </div>
 
   <div class="navbar-container-1">
-    <a *ngFor="let navItem of navItems; let i = index" [routerLink]="navItem.path" class="nav-item-1 index-{{i+1}}" routerLinkActive="active" (click)="onClick()">{{navItem.label}}</a>
+    <a class="nav-1-item index-2" routerLinkActive="active" [href]="navItems[1].path" target="_blank" >{{navItems[1].label}}</a>
+    <a class="nav-1-item index-3" routerLinkActive="active" [routerLink]="navItems[2].path" >{{navItems[2].label}}</a>
+    <a class="nav-1-item index-4" routerLinkActive="active" [routerLink]="navItems[3].path" >{{navItems[3].label}}</a>
+    <a class="nav-1-item index-5" routerLinkActive="active" [routerLink]="navItems[4].path" >{{navItems[4].label}}</a>
   </div>
 
 
@@ -37,7 +40,11 @@
     </div>
 
     <div class="nav-item-container">
-      <a *ngFor="let navItem of navItems; let i = index" [routerLink]="navItem.path" class="nav-item index-{{i+1}}" routerLinkActive="active" (click)="onClick()">{{navItem.label}}</a>
+      <a class="nav-item index-2" routerLinkActive="active" [href]="navItems[1].path" target="_blank" (click)="onClick()">{{navItems[1].label}}</a>
+      <a class="nav-item index-3" routerLinkActive="active" [routerLink]="navItems[2].path" (click)="onClick()">{{navItems[2].label}}</a>
+      <a class="nav-item index-4" routerLinkActive="active" [routerLink]="navItems[3].path" (click)="onClick()">{{navItems[3].label}}</a>
+      <a class="nav-item index-5" routerLinkActive="active" [routerLink]="navItems[4].path" (click)="onClick()">{{navItems[4].label}}</a>
+<!--      <a *ngFor="let navItem of navItems; let i = index" [routerLink]="navItem.path" class="nav-item index-{{i+1}}" routerLinkActive="active" (click)="onClick()">{{navItem.label}}</a>-->
     </div>
   </div>
 </div>

@@ -11,23 +11,28 @@ export class HeaderComponent implements OnInit {
   navItems = [
     {
       label: "Student",
-      path: "/"
+      path: "/",
+      disabled: true
     },
     {
       label: "Institution",
-      path: "/"
+      path: "https://my-success-2022.firebaseapp.com/#/",
+      disabled: false
     },
     {
       label: "About Us",
-      path: "/about-us"
+      path: "/about-us",
+      disabled: false
     },
     {
       label: "Why Mysuccess",
-      path: "/why-mysuccess"
+      path: "/why-mysuccess",
+      disabled: false
     },
     {
       label: "Contact Us",
-      path: "/contact-us"
+      path: "/contact-us",
+      disabled: false
     }
   ]
 

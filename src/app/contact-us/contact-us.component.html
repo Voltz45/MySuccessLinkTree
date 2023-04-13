@@ -8,7 +8,7 @@
     <form class="form-container">
       <mat-form-field  appearance="outline">
         <mat-label>Name</mat-label>
-        <input type="email" matInput [formControl]="nameFormControl" placeholder="Smith John">
+        <input type="text" matInput [formControl]="nameFormControl" placeholder="Smith John">
         <mat-error *ngIf="nameFormControl.hasError('required')">
           Name is <strong>required</strong>
         </mat-error>
@@ -23,16 +23,18 @@
           Email is <strong>required</strong>
         </mat-error>
       </mat-form-field>
+      <mat-form-field  appearance="outline">
+        <mat-label>Mobile Number</mat-label>
+        <input type="text" matInput [formControl]="mobileFormControl" placeholder="08911111111111">
+        <mat-error *ngIf="mobileFormControl.hasError('required')">
+          Mobile number is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
       <mat-form-field appearance="outline">
         <mat-label>Message</mat-label>
-        <textarea autosize matInput [formControl]="msgFormControl"></textarea>
+        <textarea autosize matInput [formControl]="msgFormControl" class="text-area"></textarea>
       </mat-form-field>
     </form>
-    <button mat-raised-button color="primary" class="submit-button" (click)="onSubmit()" [disabled]="
-    emailFormControl.hasError('required') && nameFormControl.hasError('required') ||
-    (emailFormControl.hasError('required') && !nameFormControl.hasError('required')) ||
-(emailFormControl.hasError('email') && !nameFormControl.hasError('required')) ||
-(!emailFormControl.hasError('email') && nameFormControl.hasError('required')) ||
-(!emailFormControl.hasError('required') && nameFormControl.hasError('required'))">Submit</button>
+    <button mat-raised-button color="primary" class="submit-button" (click)="onSubmit()" [disabled]="nameFormControl.value == '' || emailFormControl.value == '' || mobileFormControl.value == '' || emailFormControl.hasError('email')">Submit</button>
   </div>
 </div>
